@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card.css'; 
+import Icon from '../icons_FEtask/avatar-svgrepo-com.svg';
 
 const Card = ({id,title,tag}) => {
   return (
@@ -7,7 +8,7 @@ const Card = ({id,title,tag}) => {
       <div className="card-header">
         <span className="card-id">{id}</span>
         <span className="card-avatar">
-          <img src="path_to_avatar_image" alt="avatar" className="avatar" />
+          <img src={Icon} alt="avatar" className="avatar" />
         </span>
       </div>
       <h2 className="card-title">{title}</h2>
