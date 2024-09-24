@@ -1,0 +1,22 @@
+.heading-ribbon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.heading-ribbon-icon{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.heading-ribbon-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+.heading-ribbon-number{
+    margin: 0 5px;
+    margin-left: 15px;
+}

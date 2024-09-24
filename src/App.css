@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.board {
   display: flex;
   flex-direction: column;
+}
+
+.columns {
+  gap: 20px;
+  padding: 20px;
+  background-color: #f2f0f0;
+  justify-content: space-between;
+}
+
+.column {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  min-height: 300px;
+}
+
+.ticket {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ticket h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+  width: 200px;
+  position: relative;
+}
+.navbardropdown{
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid black; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  padding: 5px 10px; 
+  background-color: white;
+}
+.dropdown-menu{
+  position: absolute; 
+  min-width: 350px;
+  margin-left: 20px;
+  top: 100%; 
+  left: 0; 
+  background-color: #f2f0f0;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  z-index: 1000; 
+  margin-top: 5px; 
+}
+.dropdown-item{
+  padding: 10px 15px; 
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown-item-heading{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown-item-heading-btn{
+  min-width: 110px
 }
